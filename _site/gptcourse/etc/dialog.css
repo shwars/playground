@@ -1,0 +1,179 @@
+/* Base Styles */
+.tutorial-body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.tutorial-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.example-section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* Dialog Containers */
+.dialog-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+/* Chat Messages */
+.chat-message {
+    margin: 15px 0;
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.ai-message {
+    background-color: #e9ecef;
+    color: black;
+}
+
+/* Buttons */
+.dialog-trigger {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dialog-trigger:hover {
+    background-color: #218838;
+}
+
+/* Code Blocks */
+.code-block {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    tab-size: 4;
+    margin: 15px 0;
+}
+
+/* Tables */
+.chat-table {
+    margin: 15px 0;
+    border-collapse: collapse;
+    width: auto;
+}
+
+.chat-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: 1px solid #0056b3;
+}
+
+.chat-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    background-color: white;
+}
+
+.chat-table tr:nth-child(even) td {
+    background-color: #f8f9fa;
+}
+
+/* Typing Animation */
+.typing-indicator {
+    display: inline-block;
+    padding: 10px;
+}
+
+.typing-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    animation: typing 1.4s infinite;
+}
+
+@keyframes typing {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Q&A Styles */
+.qa-section {
+    margin: 40px 0;
+    border-top: 2px solid #eee;
+    padding-top: 30px;
+}
+
+.qa-item {
+    margin: 15px 0;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.qa-question {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qa-question::after {
+    content: "►";
+    font-size: 0.8em;
+    transition: transform 0.2s;
+}
+
+.qa-question.active::after {
+    transform: rotate(90deg);
+}
+
+.qa-question:hover {
+    background-color: #e9ecef;
+}
+
+.qa-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.qa-answer p {
+    margin: 15px 0;
+}

@@ -1,0 +1,6 @@
+<div class="qa-item">
+        <button class="qa-question">{{ include.q }}</button>
+        <div class="qa-answer">
+            <p>{{ include.a }}</p>
+        </div>
+</div>

@@ -1,0 +1,2 @@
+<button class="dialog-trigger" data-dialog="{{ include.id }}">{{ include.text }}</button>
+<div class="dialog-container" id="{{ include.id }}Dialog"></div>
